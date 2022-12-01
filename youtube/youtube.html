@@ -11,23 +11,27 @@
 <style>
     p{
         font-family: Roboto,Arial;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .vid-topic{
         font-size: 14px;
         font-weight: 500;
         line-height: 20px;
+        margin-top: 0px;
     }
 
     .vid-author,.vid-stats{
         font-size: 12.5px;
         color: rgb(96,96,96);
         line-height: 7.5px;
+        margin-top: 12px;
+        margin-bottom: 10px;
     }
 
     .thumbnail{
-    width: 300px;
-    display: block;
+    width: 100%;
     }
 
     .search-box{
@@ -36,23 +40,19 @@
         
     }
     .vid-preview{
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 15px;
-    }
+            }
 
     .vid-content{
         display: inline-block;
-        width: 200px;
 
     }
 
     .vid-icon{
         display: inline-block;
         width: 50px;
-        margin-top: 10px;
+        margin-top: 0px;
         vertical-align: top;
+
     }
     .channel-icon{
         width: 36px;
@@ -60,7 +60,19 @@
 
     }
     .thumbnail{
-        margin-bottom: 2.5px;
+        width: 100%;
+    }
+    .vid-grid{
+        display: grid;
+        grid-template-columns: 50px 1fr ;
+    } 
+
+    .total-grid{
+        display: grid;
+        column-gap: 16px;
+        row-gap: 40px;
+        grid-template-columns: 1fr 1fr 1fr ;
+        
     }
 
 </style>
@@ -69,49 +81,159 @@
 
 
     <input class="search-box" type="text" placeholder="Search">
+    <div class="total-grid">
 
-    <div class="vid-preview">
-        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-       
-        <div class="vid-icon">
-            <img class="channel-icon" src="channel-icons/channel-1.jpeg">
+        <div class="vid-preview">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+           <div class="vid-grid">
+            <div class="vid-icon">
+                <img class="channel-icon" src="channel-icons/channel-1.jpeg">
+            </div>
+            
+            <div class="vid-content">
+                <p class="vid-topic">
+                    Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
+        
+                <p class="vid-author">
+                    Marques Brownlee 
+                </p>
+            
+                <p class="vid-stats">
+                    3.4M views · 6 months ago
+                </p>    
+            </div>
         </div>
-        
-        <div class="vid-content">
-            <p class="vid-topic">
-                Talking Tech and AI with Google CEO Sundar Pichai!
-            </p>
-    
-            <p class="vid-author">
-                Marques Brownlee 
-            </p>
-        
-            <p class="vid-stats">
-                3.4M views · 6 months ago
-            </p>    
+            
         </div>
-        
-    </div>
-
-
-
-
-
-    <div class="vid-preview">
-        <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-
-        <p class="video-topic">
-            Try Not To Laugh Challenge #9     
-        </p>
-        
-        <p class="video-author">
-            Markiplier
-        </p>
     
-        <p class="video-stats">
-            19M views · 4 years ago
-        </p>    
+    
+    
+    
+    
+        <div class="vid-preview">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+           <div class="vid-grid">
+            <div class="vid-icon">
+                <img class="channel-icon" src="channel-icons/channel-2.jpeg">
+            </div>
+            
+            <div class="vid-content">
+                <p class="vid-topic">    
+                    Try Not To Laugh Challenge #9
+                </p>
+        
+                <p class="vid-author">
+                    Markiplier
+                </p>
+            
+                <p class="vid-stats">
+                    19M views · 4 years ago
+                </p>    
+            </div>
+        </div>
+            
+        </div>
+    
+        <div class="vid-preview">
+            <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+           <div class="vid-grid">
+            <div class="vid-icon">
+                <img class="channel-icon" src="channel-icons/channel-3.jpeg">
+            </div>
+            
+            <div class="vid-content">
+                <p class="vid-topic">    
+                    
+Crazy Tik Toks Taken Moments Before DISASTER
+                </p>
+        
+                <p class="vid-author">
+                    SSSniperWolf
+                </p>
+            
+                <p class="vid-stats">
+                    12M views · 1 year ago
+                </p>    
+            </div>
+        </div>
+            
+        </div>
+    
+        <div class="vid-preview">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+           <div class="vid-grid">
+            <div class="vid-icon">
+                <img class="channel-icon" src="channel-icons/channel-4.jpeg">
+            </div>
+            
+            <div class="vid-content">
+                <p class="vid-topic">    
+                    
+The Simplest Math Problem No One Can Solve - Collatz
+                </p>
+        
+                <p class="vid-author">
+                    Veritasium
+                </p>
+            
+                <p class="vid-stats">
+                    18M views · 4 months ago                </p>    
+            </div>
+        </div>
+            
+        </div>
+    
+        <div class="vid-preview">
+            <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+           <div class="vid-grid">
+            <div class="vid-icon">
+                <img class="channel-icon" src="channel-icons/channel-5.jpeg">
+            </div>
+            
+            <div class="vid-content">
+                <p class="vid-topic">    
+
+                    Kadane's Algorithm to Maximum Sum Subarray                </p>
+        
+                <p class="vid-author">
+                    CS Dojo                </p>
+            
+                <p class="vid-stats"> 
+                    519K views · 5 years ago
+                </p>    
+            </div>
+        </div>
+            
+        </div>
+    
+        <div class="vid-preview">
+            <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+           <div class="vid-grid">
+            <div class="vid-icon">
+                <img class="channel-icon" src="channel-icons/channel-6.jpeg">
+            </div>
+            
+            <div class="vid-content">
+                <p class="vid-topic">    
+
+                    Anything You Can Fit In The Circle I’ll Pay For                </p>
+        
+                <p class="vid-author">
+                    MrBeast                </p>
+            
+                <p class="vid-stats">
+                    141M views · 1 year ago                </p>    
+            </div>
+        </div>
+            
+        </div>
+    
     </div>
+    
+
+
+
     
 </body>
 </html>
